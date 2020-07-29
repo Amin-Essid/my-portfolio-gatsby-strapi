@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "skills",
+  "info": {
+    "name": "skill"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "domain": {
+      "type": "string",
+      "required": true
+    },
+    "smallImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "largeImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}
