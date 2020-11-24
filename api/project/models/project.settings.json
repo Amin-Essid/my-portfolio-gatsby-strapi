@@ -46,6 +46,10 @@
       "repeatable": true,
       "component": "description.stack-item",
       "required": true
+    },
+    "projectID": {
+      "required": true,
+      "type": "integer"
     }
   }
 }
